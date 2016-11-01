@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 node_modules/
 
 *.zip
 
-=======
-node_modules/
-
-*.zip
-
->>>>>>> 484936a95df74885d8f4d2c93366f45ead897227
 doc/

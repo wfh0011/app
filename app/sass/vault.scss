@@ -1,0 +1,48 @@
+body{margin: 0;padding: 0;}
+//头部样式
+header{width: 100%;height: 48px;background-color:#8e488e ;z-index: 100;
+        box-sizing: border-box;padding-left:10% ;position: fixed;left: 0;right: 0;
+        .logo{width:62px;height: 48px;position: absolute;left: 50%;margin-left: -31px;
+            img{width: 62px;height: 25px;margin-top: 11px;}
+        }
+        .seach{position: absolute;left: 20px;top: 8px;text-decoration: none;color: white;}
+        .iconfont{font-size: 24px;}
+}
+//底部样式 
+footer{display: flex;position: fixed;left: 0;right: 0;bottom: 0;height: 54px;
+        background-color: #fff;padding: 3px 0;border-top: 1px solid #999;z-index: 100;
+        a{text-decoration: none;color: #999;flex: 1;text-align: center;
+        i{display: block;}
+        .iconfont{font-size:16px ;}
+        span{font-size: 12px;}
+        }
+} 
+//撑开与头部的间隔
+.inde_top{width: 100%;height: 48px;}
+//当前结算与余额
+.resid{
+    padding: 5px 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    div{text-align: center;}
+    div:nth-child(1){border-right:1px solid #999;}
+    .sp1,.sp3{display: block;font-size: 20px;}
+    .sp2,.sp4{font-size: 12px;color: #9D9D9D;}
+}
+//收支列表
+.caption{
+    border-top: 1px solid #9D9D9D;
+    div{text-align: center;padding: 5px 0;border-right:1px solid #9D9D9D ;
+        border-bottom: 1px solid rgb(231,234,236);
+        span{font-size: 12px;}
+    }
+    div:last-child{border-right:none}
+}
+//收支详情
+.details{
+    padding-bottom: 60px;
+    div{text-align: center;padding: 5px 0;
+        border-bottom: 1px solid rgb(231,234,236);
+        span{font-size: 12px;color: #999999;}
+    }
+}

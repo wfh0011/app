@@ -1,0 +1,68 @@
+body{margin: 0;padding: 0;}
+//头部样式
+header{width: 100%;height: 48px;background-color:#8e488e ;z-index: 100;
+        box-sizing: border-box;padding-left:10% ;position: fixed;left: 0;right: 0;
+        .logo{width:62px;height: 48px;position: absolute;left: 50%;margin-left: -31px;
+            img{width: 62px;height: 25px;margin-top: 11px;}
+        }
+        .seach{position: absolute;right: 10px;top: 6px;text-decoration: none;color: white;}
+        .iconfont{font-size: 24px;}
+}
+//底部样式 
+footer{display: flex;position: fixed;left: 0;right: 0;bottom: 0;height: 54px;
+        background-color: #fff;padding: 3px 0;border-top: 1px solid #999;z-index: 100;
+        a{text-decoration: none;color: #999;flex: 1;text-align: center;
+        i{display: block;}
+        .iconfont{font-size:16px ;}
+        span{font-size: 12px;}
+        }
+}
+//撑开与头部的间隔
+.inde_top{width: 100%;height: 48px;}
+//轮播图样式
+.swiper-slide img{width: 100%;height: auto;}
+.container-fluid{
+    img{width: 36px;height: 36px;}
+    span{margin-top:10px ;margin-left: 4px;color:#333;font-size: 14px;}
+}
+//导航样式
+.index_list{
+    border-bottom: 1px solid #ADADAD;
+    .container-fluid div{
+        padding: 10px 0;text-align: center;
+        a:hover{text-decoration: none;}
+        }
+}
+//分类导航样式
+.category{
+            .item{width: 50%;
+                overflow: hidden;
+                padding: 5px;
+                img{width: 100%;}
+                }
+}
+.proimg{padding:0 5px 10px;border-bottom: 1px dotted #999;
+          img{width: 100%;height: auto;}
+}
+//商品展示样式
+.produlist{
+    padding-bottom:60px;
+    .proimgs{padding: 10px 5px;
+            img{width: 100%;height: auto;}
+            }
+    .item-title{ 
+        border-bottom: 1px dotted #999;padding-bottom: 10px;padding-left: 5px;
+        .s1{color: #000000;font-size: 16px;font-family: "微软雅黑";display: block;}
+        .s2{color: #131313;font-size: 12px;font-family: "微软雅黑";}
+        .s3{color: #934988;font-size: 14px;font-family: "微软雅黑";}
+        .s4{color: #934988;font-size: 10px;font-family: "微软雅黑";}
+    }
+}
+//返回顶部按钮
+.fh-top{
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    display: none;
+    .icon-fanhuidingbu{font-size: 45px;color:#D43F3A;}
+}
