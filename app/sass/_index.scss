@@ -1,0 +1,35 @@
+body{margin: 0;padding: 0;}
+.swiper-slide img{width: 100%;height: auto;}
+.container-fluid{
+    img{width: 36px;height: 36px;}
+    span{margin-top:10px ;margin-left: 4px;color:#333;font-size: 14px;}
+}
+.index_list{
+    border-bottom: 1px solid #ADADAD;
+    .container-fluid div{
+        padding: 10px 0;text-align: center;
+        a:hover{text-decoration: none;}
+        }
+}
+.category{
+            .item{width: 50%;
+                overflow: hidden;
+                padding: 5px;
+                img{width: 100%;}
+                }
+}
+.proimg{padding:0 5px 10px;border-bottom: 1px dotted #999;
+          img{width: 100%;height: auto;}
+}
+.produlist{
+    .proimgs{padding: 10px 5px;
+            img{width: 100%;height: auto;}
+            }
+    .item-title{ 
+        border-bottom: 1px dotted #999;padding-bottom: 10px;padding-left: 5px;
+        .s1{color: #000000;font-size: 16px;font-family: "微软雅黑";display: block;}
+        .s2{color: #131313;font-size: 12px;font-family: "微软雅黑";}
+        .s3{color: #934988;font-size: 14px;font-family: "微软雅黑";}
+        .s4{color: #934988;font-size: 10px;font-family: "微软雅黑";}
+    }
+}
