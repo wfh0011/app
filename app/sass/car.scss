@@ -1,0 +1,20 @@
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+header{background: rgb(142,72,142);display: flex;}
+header a,header span{flex: 1;text-align: center;color: white;padding: 15px 0;}
+section{display: flex;flex-direction: column;}
+section div{flex: 1;position: relative;border-bottom: 1px solid #ddd;padding-bottom: 20px;}
+section div .money{position: absolute;left: 140px;top: 70px;color: red;}
+section div .wz{position: absolute;top: 10px;left: 140px;}
+section img{width: 60px;vertical-align: middle;}
+section div p{position: absolute;right: 20px;top: 70px;}
+section div p input{text-align: center;}
+footer{display: flex;}
+footer a{flex: 1;text-align: center;padding: 15px 0;}
+footer a:nth-child(1){color: black;border-top: 1px solid rgb(142,72,142);}
+footer a:nth-child(2){background: rgb(221,61,51);color: white;}
+footer a:nth-child(3){background: rgb(142,72,142);color: white;}
+
+
+
+
