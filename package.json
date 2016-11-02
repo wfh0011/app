@@ -1,7 +1,7 @@
 {
-  "name": "web_app",
+  "name": "app-project",
   "version": "1.0.0",
-  "description": "web-app",
+  "description": "App项目",
   "main": "index.js",
   "directories": {
     "doc": "doc"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wfh0011/web_app.git"
+    "url": "git+https://github.com/wfh0011/app.git"
   },
   "keywords": [
     "app"
@@ -19,9 +19,9 @@
   "author": "yutian",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wfh0011/web_app/issues"
+    "url": "https://github.com/wfh0011/app/issues"
   },
-  "homepage": "https://github.com/wfh0011/web_app#readme",
+  "homepage": "https://github.com/wfh0011/app#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",

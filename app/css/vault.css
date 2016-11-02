@@ -16,17 +16,21 @@ header {
 }
 
 header .logo {
-  width: 62px;
+  width: 80px;
   height: 48px;
   position: absolute;
   left: 50%;
-  margin-left: -31px;
+  margin-left: -40px;
 }
 
-header .logo img {
-  width: 62px;
+header .logo span {
+  width: 80px;
   height: 25px;
   margin-top: 11px;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  color: white;
 }
 
 header .seach {
