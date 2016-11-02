@@ -9,8 +9,10 @@
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
 		<script src="bootstrap/jquery-1.12.0.js" type="text/javascript" charset="utf-8"></script>
-		<script src="swiper/swiper-3.4.0.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="bootstrap/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="zepto/touch.js" type="text/javascript" charset="utf-8"></script>
+		<script src="swiper/swiper-3.4.0.min.js" ></script>
+		<script src="bootstrap/bootstrap.min.js" ></script>
 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -63,8 +65,8 @@
 		<div class="proimg"><a href="#"><img src="img/index44.jpg"/></a></div>
 		<!--商品展示-->
 		<div class="produlist">
-			<div class="proimgs">
-				<a href="#"><img src="images/index33.jpg"/></a>
+			<!--<div class="proimgs">
+				<a href="#"><img src="img/index33.jpg"/></a>
 			</div>
 			<div class="item-title">
 				<span class="s1">东革阿里 马亚西亚原始森林 5A级原片</span>
@@ -73,18 +75,29 @@
 				<span class="s4">起</span>
 			</div>
 			<div class="proimgs">
-				<a href="#"><img src="images/index4.jpg"/></a>
+				<a href="#"><img src="img/index4.jpg"/></a>
 			</div>
 			<div class="item-title">
 				<span class="s1">东革阿里 马亚西亚原始森林 5A级原片</span>
 				<span class="s2">积分价:</span>
 				<span class="s3">549</span>
 				<span class="s4">起</span>
-			</div>
+			</div>-->
 		</div>
 		<div class="fh-top">
 			<span class="iconfont icon-fanhuidingbu">
 			</span>
 		</div>
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded",function(){
+				var mySwiper = new Swiper ('.swiper-container', {
+				    autoplay: 3000,
+				    loop: true,
+				    autoplayDisableOnInteraction : false,
+				    // 如果需要分页器
+				    pagination: '.swiper-pagination',
+				  });  
+			});
+		</script>
 	</body>
 </html>

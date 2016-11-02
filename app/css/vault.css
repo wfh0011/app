@@ -102,36 +102,36 @@ footer a span {
   color: #9D9D9D;
 }
 
-.caption {
+.vault_main {
+  padding-bottom: 60px;
+}
+
+.vault_main .caption {
   border-top: 1px solid #9D9D9D;
 }
 
-.caption div {
+.vault_main .caption div {
   text-align: center;
   padding: 5px 0;
   border-right: 1px solid #9D9D9D;
   border-bottom: 1px solid #e7eaec;
 }
 
-.caption div span {
+.vault_main .caption div span {
   font-size: 12px;
 }
 
-.caption div:last-child {
+.vault_main .caption div:last-child {
   border-right: none;
 }
 
-.details {
-  padding-bottom: 60px;
-}
-
-.details div {
+.vault_main .details div {
   text-align: center;
   padding: 5px 0;
   border-bottom: 1px solid #e7eaec;
 }
 
-.details div span {
+.vault_main .details div span {
   font-size: 12px;
   color: #999999;
 }
