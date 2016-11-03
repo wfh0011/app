@@ -42,8 +42,7 @@ footer{
 }
 .detail_main{
     width: 100%;
-    position: absolute;
-    top: 48px;
+    padding:38px 0;
     .swiper-container{width:100%;height: 375px;}
     .swiper-pagination-bullet{background:#e80080 !important;}
     .swiper-slide img{
@@ -77,8 +76,8 @@ footer{
             li{
                 width: 100%;
                 img{
-                width: 100%;
-            }
+                    width: 100%;
+                }
             }
             
         }
@@ -90,8 +89,9 @@ footer{
     list-style: none;
     padding: 0;
     margin: 0;
-    border-top: 10px solid $bg;
+    
     li{
+        border-top: 10px solid $bg;
         font-size: 14px;
         padding: 0 10px;
        
@@ -105,12 +105,13 @@ footer{
             img{
                 vertical-align: middle;
                 
-                width: 25px;
                 height: 25px;
                 border-radius: 50%;
             }
             span:first-child{
-               
+                position: absolute;
+                left: 60px;
+                top: 20px;
                 color: black;
                 font-size: 14px;
             }
@@ -149,8 +150,19 @@ footer{
 
 
 .foot{
+    font-size:14px;
+    color: wheat;
     display: flex;
     span{
+        
         flex: 1;
+        a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: wheat;
+        }
     }
+    
 }

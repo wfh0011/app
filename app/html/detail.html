@@ -6,10 +6,6 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<link rel="stylesheet" href="../font/font_diy8qvn2fenrk9/iconfont.css" />>
 		<link rel="stylesheet" href="../css/detail.css" />
-
-
-		
-
 		<link rel="stylesheet" href="../swiper/swiper-3.4.0.min.css" />
 		<script src="../swiper/swiper-3.4.0.min.js"></script>
 		<script type="text/javascript" src="../js/jquery-1.12.0.js" ></script>
@@ -25,108 +21,73 @@
 			<a class="iconfont icon-uilist" href="#"></a>
 		</header>
 		<div class="detail_main">
-			<div class="swiper-container">
-			    <div class="swiper-wrapper">
-			        <div class="swiper-slide"><img src="../img/details_kbl1.jpg"/></div>
-			        <div class="swiper-slide"><img src="../img/details_kbl2.jpg"/></div>
-			        <div class="swiper-slide"><img src="../img/details_kbl3.jpg"/></div>
-			        <div class="swiper-slide"><img src="../img/details_kbl4.jpg"/></div>
-			    </div>
-			    <!-- 如果需要分页器 -->
-			    <div class="swiper-pagination"></div>
-			    <!-- 如果需要导航按钮 -->
-			    <!--<div class="swiper-button-prev"></div>
-			    <div class="swiper-button-next"></div>-->
-			    <!-- 如果需要滚动条 -->
-			   <!-- <div class="swiper-scrollbar"></div>-->
-			</div>
-			<div class="detail_price">
-				<span>售价：</span><span>￥998</span>
-			</div>
+			<!--详情信息-->
+			<div class="detail_main1">
 			
-			<div class="product_info">
-				<p>
-					<span>品牌名称：</span><span class="detail_brand">英国卡贝卢</span>
-				</p>
-			
-				<p>
-					<span>商品名称：</span><span class="detail_product">英国卡贝卢婴儿奶粉</span>
-				</p>
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide"><img src="../img/details_kbl1.jpg"/></div>
+				        <div class="swiper-slide"><img src="../img/details_kbl2.jpg"/></div>
+				        <div class="swiper-slide"><img src="../img/details_kbl3.jpg"/></div>
+				        <div class="swiper-slide"><img src="../img/details_kbl4.jpg"/></div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <div class="swiper-pagination"></div>
+				    <!-- 如果需要导航按钮 -->
+				    <!--<div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>-->
+				    <!-- 如果需要滚动条 -->
+				   <!-- <div class="swiper-scrollbar"></div>-->
+				</div>
+				<div class="detail_price">
+					<span>售价：</span><span>￥998</span>
+				</div>
+				
+				<div class="product_info">
+					<p>
+						<span>品牌名称：</span><span class="detail_brand">英国卡贝卢</span>
+					</p>
+				
+					<p>
+						<span>商品名称：</span><span class="detail_product">英国卡贝卢婴儿奶粉</span>
+					</p>
+				</div>
+				<div class="detail_img">
+					<ul>
+						<li><img src="../img/detail_intr1.jpg"/></li>
+						<li><img src="../img/detail_intr2.jpg"/></li>
+						<li><img src="../img/detail_intr3.jpg"/></li>
+						<li><img src="../img/detail_intr4.jpg"/></li>
+					</ul>
+				</div>
 			</div>
-			<div class="detail_img">
-				<ul>
-					<li><img src="../img/detail_intr1.jpg"/></li>
-					<li><img src="../img/detail_intr2.jpg"/></li>
-					<li><img src="../img/detail_intr3.jpg"/></li>
-					<li><img src="../img/detail_intr4.jpg"/></li>
+			<!--评论-->
+			<div class="detail_main2">
+				<ul class="commentlist">
+					<li>
+						<div class="comment_name">
+							<img src="../img/face.jpg"/>
+							<span>熬巴马</span>
+							<span>2016-11-2&nbsp;14:00</span>
+						</div>
+						<div class="comment_star">
+							<img src="../img/star.jpg" />
+						</div>
+						<p class="comment_info">
+							真心好，下次还会再来买！我不是托
+						</p>
+						<p class="buy_date">
+							购买日期：2016-11-1&nbsp;14:00
+						</p>
+					</li>
 				</ul>
 			</div>
-			
 		</div>
 		<footer class="foot">
 			<span class="shoppingCar">购物车<span>0</span></span>
 			<span class="inCar">加入购物车</span>
-			<span class="buyNow">立即购买</span>
+			<span class="buyNow"><a href="car.html">立即购买</a></span>
 		</footer>
 	</body>
-	<script>
-		
-		var detail_src=localStorage.getItem("product_src1");
-		var detail_brand=localStorage.getItem("brand_name");
-		var detail_product=localStorage.getItem("product_name");
-		var detail_price=localStorage.getItem("product_price");
-		
-		//轮播图片更换
-		$(".swiper-slide").children("img").first().attr("src",detail_src);
-		//价格更换
-		$(".detail_price").children("span").last().html(detail_price);
-		//品牌名称
-		$(".detail_brand").html(detail_brand);
-		//商品名称变换
-		$(".detail_product").html(detail_product);
-		//初始化Swiper：最好是挨着</body>标签
-		var mySwiper = new Swiper ('.swiper-container', {
-			//可选选项，自动滑动
-			autoplay: 2000,//可选选项，自动滑动
-			//方向：垂直
-//		    direction: 'vertical',
-		    //是否循环（轮播）
-		    loop: true,
-		    // 如果需要分页器
-		    pagination: '.swiper-pagination',
-		    //分页器是否可点击切换
-		    paginationClickable :true,
-		    // 如果需要前进后退按钮
-//		    nextButton: '.swiper-button-next',
-//		    prevButton: '.swiper-button-prev',
-		    // 如果需要滚动条
-		//  scrollbar: '.swiper-scrollbar'
-		})  
-		//点击加入购物车
-		var shoppingCar=$(".shoppingCar");
-		var inCar=$(".inCar");
-		var buyNow=$(".buyNow");
-		//创建空数组
-		var arr=[];
-		if (localStorage.getItem("car_number")) {
-			shoppingCar.children("span").html(localStorage.getItem("car_number"));
-			arr=JSON.parse(localStorage.getItem("car_info"));
-			console.log(arr)
-		}
-		inCar.on("tap",function(){
-			var obj={
-				"detail_src":detail_src,
-				"detail_product":detail_product,
-				"detail_price":detail_price
-			}
-			arr.push(obj);
-			var length=arr.length;
-			shoppingCar.children("span").html(length);
-			console.log(arr);
-			localStorage.setItem("car_number",arr.length)
-			localStorage.setItem("car_info",JSON.stringify(arr));
-		});
-		
-		
-	</script>
+	<script src="../js/detail.js"></script>
 </html>
