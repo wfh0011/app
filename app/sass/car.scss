@@ -7,14 +7,14 @@ section{
     padding-bottom: 80px;
     div{
         flex: 1;position: relative;border-bottom: 1px solid #ddd;padding-bottom: 20px;
-        .money{position: absolute;left: 140px;top: 70px;color: red;}
+        .money{position: absolute;left: 140px;top: 50px;color: red;}
         .wz{position: absolute;top: 10px;left: 140px;} 
         p{
-            position: absolute;right: 20px;top: 70px;
+            position: absolute;right: 20px;top: 50px;
             input{text-align: center;}
         }  
     }
-    img{width: 60px;vertical-align: middle;}
+    img{width: 60px;vertical-align: middle;padding-top: 10px;}
 }
 
 footer{
@@ -25,6 +25,20 @@ footer{
     a:nth-child(3){background: rgb(142,72,142);color: white;}
 }
 
+.side-list{
+        width: 126px;height: 234px;background:rgba(0,0,0,0.5);
+        position: absolute;border-radius: 5px;z-index: 101;right: 58px;top: 50px;
+        display: none;
+        ul{
+            list-style: none;padding: 0;margin: 0;
+            li{
+                height: 38px;border-bottom:1px solid #5b6166 ;line-height: 38px;text-align: center;
+                a{text-decoration: none;color: white;}
+            }
+            li:last-child{border-bottom: none;} 
+        }
+        ::before{content: "";border:10px solid transparent ;border-bottom:10px solid rgba(0,0,0,0.5) ;position:absolute ;right: 10px;top: -20px;}
+    }
 
 
 

@@ -35,7 +35,7 @@ section div {
 section div .money {
   position: absolute;
   left: 140px;
-  top: 70px;
+  top: 50px;
   color: red;
 }
 
@@ -48,7 +48,7 @@ section div .wz {
 section div p {
   position: absolute;
   right: 20px;
-  top: 70px;
+  top: 50px;
 }
 
 section div p input {
@@ -58,6 +58,7 @@ section div p input {
 section img {
   width: 60px;
   vertical-align: middle;
+  padding-top: 10px;
 }
 
 footer {
@@ -88,4 +89,47 @@ footer a:nth-child(2) {
 footer a:nth-child(3) {
   background: #8e488e;
   color: white;
+}
+
+.side-list {
+  width: 126px;
+  height: 234px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  border-radius: 5px;
+  z-index: 101;
+  right: 58px;
+  top: 50px;
+  display: none;
+}
+
+.side-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-list ul li {
+  height: 38px;
+  border-bottom: 1px solid #5b6166;
+  line-height: 38px;
+  text-align: center;
+}
+
+.side-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-list ul li:last-child {
+  border-bottom: none;
+}
+
+.side-list ::before {
+  content: "";
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 10px;
+  top: -20px;
 }

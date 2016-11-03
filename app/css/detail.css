@@ -172,6 +172,55 @@ footer {
   display: flex;
 }
 
+.foot a {
+  flex: 1;
+  text-decoration: none;
+  color: black;
+}
+
 .foot span {
   flex: 1;
+}
+
+.side-list {
+  width: 126px;
+  height: 234px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  border-radius: 5px;
+  z-index: 101;
+  right: 38px;
+  top: 50px;
+  display: none;
+}
+
+.side-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-list ul li {
+  height: 38px;
+  border-bottom: 1px solid #5b6166;
+  line-height: 38px;
+  text-align: center;
+}
+
+.side-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-list ul li:last-child {
+  border-bottom: none;
+}
+
+.side-list ::before {
+  content: "";
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 10px;
+  top: -20px;
 }

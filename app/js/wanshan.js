@@ -148,7 +148,11 @@
 			})
 		
 
-	
+			var $sideList = $(".side-list");
+				var $iconFenlei = $(".icon-fenlei");
+				$iconFenlei.click(function(){
+					$sideList.toggle();
+				})
 	
 	
 	

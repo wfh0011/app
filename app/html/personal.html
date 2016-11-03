@@ -30,7 +30,11 @@
 			  		
 			  	});
 			  	 
-			  	
+			  	var $sideList = $(".side-list");
+				var $iconFenlei = $(".icon-fenlei");
+				$iconFenlei.click(function(){
+					$sideList.toggle();
+				})
 			  	
 			  	
 			  	
@@ -120,5 +124,16 @@
 				<a href="personal.html"><span class="iconfont icon-gerenzhongxin"></span><br />个人中心</a>
 			</nav>
 	</footer>
+	
+	<aside class="side-list">
+			<ul>
+				<li><a href="../index.html">首页</a></li>
+				<li><a href="#">积分区</a></li>
+				<li><a href="#">夺宝区</a></li>
+				<li><a href="classify.html">分类</a></li>
+				<li><a href="car.html">购物车</a></li>
+				<li><a href="personal.html">个人中心</a></li>
+			</ul>
+		</aside>
 	</body>
 </html>

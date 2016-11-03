@@ -167,3 +167,17 @@ body,html{
        }
 }
 
+.side-list{
+        width: 126px;height: 234px;background:rgba(0,0,0,0.5);
+        position: absolute;border-radius: 5px;z-index: 101;right: 0px;top: 50px;
+        display: none;
+        ul{
+            list-style: none;padding: 0;margin: 0;
+            li{
+                height: 38px;border-bottom:1px solid #5b6166 ;line-height: 38px;text-align: center;
+                a{text-decoration: none;color: white;}
+            }
+            li:last-child{border-bottom: none;} 
+        }
+        ::before{content: "";border:10px solid transparent ;border-bottom:10px solid rgba(0,0,0,0.5) ;position:absolute ;right: 10px;top: -20px;}
+    }

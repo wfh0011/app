@@ -59,6 +59,12 @@
 			$(this).parent().parent().remove();
 		})
 	}
+	
+	var $sideList = $(".side-list");
+	var $iconUlist = $(".icon-uilist");
+	$iconUlist.click(function(){
+		$sideList.toggle();
+	})
 
 });
 
