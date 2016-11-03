@@ -61,7 +61,7 @@
 			}
 			arr.push(goods);
 			console.log(arr.length);
-			sessionStorage.setItem("arr",JSON.stringify(arr));
+			localStorage.setItem("arr",JSON.stringify(arr));
 		}
 			var money = $(this).parent().find(".money").html();
 			var Money = money.replace("￥","");
