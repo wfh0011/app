@@ -110,6 +110,8 @@
 		var arr=[];
 		if (localStorage.getItem("car_number")) {
 			shoppingCar.children("span").html(localStorage.getItem("car_number"));
+			arr=JSON.parse(localStorage.getItem("car_info"));
+			console.log(arr)
 		}
 		inCar.on("tap",function(){
 			var obj={
