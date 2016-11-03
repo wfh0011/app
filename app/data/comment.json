@@ -1,10 +1,18 @@
 [
 	{
-		"user_name":"奥巴马",
+		"user_name":"AO巴马",
 		"face_src":"../img/face.jpg",
 		"pulish_time":"2016-11-2&nbsp;14:00",
 		"comment_star":"../img/star.jpg",
 		"comment_info":"真心好，下次还会再来买！我不是托",
 		"buy_date":"购买日期：2016-11-1&nbsp;14:00"
+	},
+	{
+		"user_name":"赛琳娜",
+		"face_src":"../img/face2.jpg",
+		"pulish_time":"2016-11-3&nbsp;18:00",
+		"comment_star":"../img/star1.jpg",
+		"comment_info":"今天本来高高兴兴，收到货后心里好难受，想哭",
+		"buy_date":"购买日期：2016-10-21&nbsp;11:00"
 	}
 ]

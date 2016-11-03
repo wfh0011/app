@@ -81,14 +81,13 @@
 			   data: "json",//数据类型text xml json  script  jsonp  
 			   success: function(res){//返回的参数就是 action里面所有的有get和set方法的参数  
 			   //$.each(msg.items, function(i,item){});  
+			   		$commentlist.empty();
 			   		console.log(res)
-			   		for (var i=0;i<10;i++) {
+			   		for (var i=0;i<8;i++) {
 				   		$.each(res, function(i,item) {
-				   			console.log(item.face_src);
+				   			console.log(item.comment_star);
 				   			
 				   				$("<li><div class='comment_name'><img src='"+item.face_src+"'/><span>"+item.user_name+"</span><span>"+item.pulish_time+"</span></div><div class='comment_star'><img src='"+item.comment_star+"'/></div><p class='comment_info'>"+item.comment_info+"</p><p class='buy_date'>"+item.buy_date+"</p></li>").appendTo($commentlist);
-				   			
-				   			
 				   		});	
 			  	 	}	
 			   }

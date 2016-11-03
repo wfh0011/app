@@ -185,6 +185,14 @@ footer {
   flex: 1;
 }
 
+.foot span a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: wheat;
+}
+
 .side-list {
   width: 126px;
   height: 234px;
