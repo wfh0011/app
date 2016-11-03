@@ -1,0 +1,168 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "microsoft yahei";
+}
+
+header, footer {
+  height: 48px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.head {
+  z-index: 100;
+  margin: 0;
+  width: 100%;
+  background: #8E488E;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+footer {
+  z-index: 100;
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #f1f5f5;
+  background: #8E488E;
+}
+
+.head {
+  display: flex;
+}
+
+.head a {
+  flex: 1;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  text-align: center;
+}
+
+.head a:nth-child(2) {
+  background: white;
+}
+
+.detail_main {
+  width: 100%;
+  position: absolute;
+  top: 48px;
+}
+
+.detail_main .swiper-container {
+  width: 100%;
+  height: 375px;
+}
+
+.detail_main .swiper-pagination-bullet {
+  background: #e80080 !important;
+}
+
+.detail_main .swiper-slide img {
+  width: 100%;
+  height: 375px;
+}
+
+.detail_main .detail_price {
+  padding: 3px 10px;
+  border-bottom: 10px solid #f1f5f5;
+}
+
+.detail_main .detail_price span:nth-child(1) {
+  color: #999;
+}
+
+.detail_main .detail_price span:nth-child(2) {
+  color: #e80080;
+  font-size: 16px;
+}
+
+.detail_main .product_info {
+  font-size: 13px;
+  padding: 10px;
+}
+
+.detail_main .product_info p span:nth-child(2) {
+  color: #999;
+}
+
+.detail_main .detail_img ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detail_main .detail_img ul li {
+  width: 100%;
+}
+
+.detail_main .detail_img ul li img {
+  width: 100%;
+}
+
+.commentlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 10px solid #f1f5f5;
+}
+
+.commentlist li {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.commentlist li .comment_name {
+  position: relative;
+  height: 39px;
+  line-height: 39px;
+  border-bottom: 1px solid #f1f5f5;
+}
+
+.commentlist li .comment_name img {
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.commentlist li .comment_name span:first-child {
+  color: black;
+  font-size: 14px;
+}
+
+.commentlist li .comment_name span:last-child {
+  position: absolute;
+  right: 10px;
+  font-size: 12px;
+  color: #999;
+}
+
+.commentlist li .comment_star {
+  height: 21px;
+}
+
+.commentlist li .comment_info {
+  color: black;
+  margin: 10px 0;
+}
+
+.commentlist li .buy_date {
+  font-size: 12px;
+  color: #999;
+}
+
+.foot {
+  display: flex;
+}
+
+.foot span {
+  flex: 1;
+}

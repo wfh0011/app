@@ -26,6 +26,7 @@
 		});
 		//先加载一次
 		$.ajax();
+		var i=0;
 //		console.log($(window).innerHeight(),$(document).height(),$(document).scrollTop());
 		//滚动事件,使返回顶部图标显示或隐藏
 		$(window).on("scroll",function(){
@@ -36,7 +37,10 @@
 			}
 			//懒加载
 			if ($(document).height()-$(window).innerHeight()-$(document).scrollTop()<200) {
-				$.ajax();
+				if (i<2) {
+					$.ajax();
+				}
+				i++;
 			}
 		});
 		//点击返回顶部图标,返回顶部
