@@ -53,8 +53,7 @@ footer {
 
 .detail_main {
   width: 100%;
-  position: absolute;
-  top: 48px;
+  padding: 38px 0;
 }
 
 .detail_main .swiper-container {
@@ -111,10 +110,10 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
-  border-top: 10px solid #f1f5f5;
 }
 
 .commentlist li {
+  border-top: 10px solid #f1f5f5;
   font-size: 14px;
   padding: 0 10px;
 }
@@ -128,12 +127,14 @@ footer {
 
 .commentlist li .comment_name img {
   vertical-align: middle;
-  width: 25px;
   height: 25px;
   border-radius: 50%;
 }
 
 .commentlist li .comment_name span:first-child {
+  position: absolute;
+  left: 60px;
+  top: 20px;
   color: black;
   font-size: 14px;
 }
@@ -169,6 +170,8 @@ footer {
 }
 
 .foot {
+  font-size: 14px;
+  color: wheat;
   display: flex;
 }
 
