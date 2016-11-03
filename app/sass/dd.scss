@@ -36,12 +36,15 @@ nav li:last-child{border: none;}
     overflow: hidden;
     button{border-radius: 5px;padding: 5px;border: none;float: right;margin-right: 3px;}
 }
-.last{
-    position: fixed;
-    bottom: 0;left: 0;right: 0; 
-    display: flex;
-    background: white;
-    a{flex: 1;color: grey;font-size: 14px;text-align: center;}
-}
+
+//底部样式 
+footer{display: flex;position: fixed;left: 0;right: 0;bottom: 0;height: 54px;
+        background-color: #fff;padding: 3px 0;border-top: 1px solid #999;z-index: 100;
+        a{text-decoration: none;color: #999;flex: 1;text-align: center;
+        i{display: block;}
+        .iconfont{font-size:16px ;}
+        span{font-size: 12px;}
+        }
+} 
 
 
