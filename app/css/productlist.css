@@ -1,0 +1,107 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "microsoft yahei";
+}
+
+header, footer {
+  text-align: center;
+  line-height: 48px;
+}
+
+.head {
+  margin: 0;
+  height: 48px;
+  width: 100%;
+  background: #8E488E;
+  color: #fff;
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+footer {
+  width: 100%;
+  height: 48px;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #f1f5f5;
+  background: #8E488E;
+}
+
+.head h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.category {
+  position: fixed;
+  z-index: 2;
+  top: 48px;
+  width: 100%;
+  height: 27px;
+  background: white;
+  padding: 10px 0;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.category_left, .category_right {
+  flex: 1;
+  height: 28px;
+  padding: 0 15px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.category_left {
+  border-right: 1px solid #CCCCCC;
+}
+
+.list {
+  position: absolute;
+  top: 97px;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list ul li {
+  padding: 5px;
+  border: 1px solid #f1f5f6;
+  height: 225px;
+  overflow: hidden;
+}
+
+.list ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.list ul li .product_big {
+  height: 175.5px;
+  padding-bottom: 5px;
+}
+
+.list ul li .title {
+  height: 22px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+.list ul li .price {
+  color: #df5717;
+  font-weight: bold;
+}
+
+.list ul li .price img {
+  height: 15px;
+  margin-top: 5px;
+}

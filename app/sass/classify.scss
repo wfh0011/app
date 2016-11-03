@@ -1,0 +1,109 @@
+$bg:rgb(241,245,245);
+body{padding: 0;margin: 0;font-family: "microsoft yahei";}
+
+header,footer{height: 48px;text-align: center;line-height: 48px;}
+.head{
+    margin: 0;
+    width: 100%;
+    background: #8E488E;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+footer{
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid $bg;
+    background: #8E488E;
+}
+.head h2{margin: 0;font-size: 16px;}
+h3{font-size: 12px;font-weight: normal;text-align: left;}
+
+            .main{
+               
+                margin-top: 48px;
+                background:$bg;
+                display: flex;
+                flex-wrap: nowrap;
+            }
+            .main_left{
+                flex: 1;
+                min-width: 62px;
+            }
+            .main_right{
+                padding:0 10px;
+                flex-wrap: wrap;
+                flex: 3;
+                
+                h3{
+                    margin: 0;
+                    height: 40px;
+                    line-height: 40px;
+                }
+            }
+           
+            .main ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .left_nav li{
+                background: #fff;
+                height: 38px;line-height: 38px;text-align: left;
+                border-bottom: 1px solid $bg;
+                font-size: 13px;
+                line-height: 38px;
+                padding: 0 5px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+               
+            }
+            .left_nav li:nth-child(1){
+                background: $bg;
+                color: red;
+            }
+           
+            .main_right ul{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                background: #fff;
+            }
+            $ppwidth:292px;
+            .main_right ul li{
+                display: flex;
+                
+                width: 33.3%;
+                height: 100px;
+                img{
+                    padding: 5px 10px;
+                    display: block;
+                    width: 90%;
+                    height: 60px;
+                }
+                a{  font-size: 13px;
+                    text-decoration: none;
+                    color: black;
+                 }
+                span{
+                    display: block;
+//                  width: 33.3%;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                }
+            }
+            .right_top{
+              
+               
+            }
+            .right-bottom{
+                       
+            } 

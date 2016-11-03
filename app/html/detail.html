@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		
+		<link rel="stylesheet" href="../css/detail.css" />
+		
+		<link rel="stylesheet" href="../css/swiper-3.4.0.min.css" />
+		<script src="../js/swiper-3.4.0.min.js"></script>
+		
+		
+	</head>
+	<body>
+		<header class="head">
+			<a href="#">&lt;</a>
+			<a href="#" class="detail">详情</a>
+			<a href="#" class="comment">评论</a>
+			<a href="#">下拉菜单</a>
+		</header>
+		<div class="detail_main">
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide"><img src="../img/details_kbl1.jpg"/></div>
+			        <div class="swiper-slide"><img src="../img/details_kbl2.jpg"/></div>
+			        <div class="swiper-slide"><img src="../img/details_kbl3.jpg"/></div>
+			        <div class="swiper-slide"><img src="../img/details_kbl4.jpg"/></div>
+			    </div>
+			    <!-- 如果需要分页器 -->
+			    <div class="swiper-pagination"></div>
+			    <!-- 如果需要导航按钮 -->
+			    <!--<div class="swiper-button-prev"></div>
+			    <div class="swiper-button-next"></div>-->
+			    <!-- 如果需要滚动条 -->
+			   <!-- <div class="swiper-scrollbar"></div>-->
+			</div>
+			<div class="detail_price">
+				<span>售价：</span><span>￥998</span>
+			</div>
+			
+			<div class="product_info">
+				<p>
+					<span>品牌名称：</span><span>英国卡贝卢</span>
+				</p>
+			
+				<p>
+					<span>商品名称：</span><span>英国卡贝卢婴儿奶粉</span>
+				</p>
+			</div>
+			<div class="detail_img">
+				<ul>
+					<li><img src="../img/detail_intr1.jpg"/></li>
+					<li><img src="../img/detail_intr2.jpg"/></li>
+					<li><img src="../img/detail_intr3.jpg"/></li>
+					<li><img src="../img/detail_intr4.jpg"/></li>
+				</ul>
+			</div>
+			
+		</div>
+		<footer class="foot">
+			<span>购物车</span>
+			<span>加入购物车</span>
+			<span>立即购买</span>
+		</footer>
+	</body>
+	<script>
+		//初始化Swiper：最好是挨着</body>标签
+		var mySwiper = new Swiper ('.swiper-container', {
+			//可选选项，自动滑动
+			autoplay: 2000,//可选选项，自动滑动
+			//方向：垂直
+//		    direction: 'vertical',
+		    //是否循环（轮播）
+		    loop: true,
+		    // 如果需要分页器
+		    pagination: '.swiper-pagination',
+		    //分页器是否可点击切换
+		    paginationClickable :true,
+		    // 如果需要前进后退按钮
+//		    nextButton: '.swiper-button-next',
+//		    prevButton: '.swiper-button-prev',
+		    // 如果需要滚动条
+		//  scrollbar: '.swiper-scrollbar'
+		})        
+	</script>
+</html>
