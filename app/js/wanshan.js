@@ -137,7 +137,9 @@
 	 
 	
 		
-			$("#btn").on("singleTap",function(){		console.log("sfdf");
+			$("#btn").on("singleTap",function(){	
+				
+				  console.log("sfdf");
 		         var str=username.value;
 		 	   
 			 	   localStorage.setItem("username",str);
