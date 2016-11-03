@@ -1,6 +1,6 @@
 ;$(function(){
 
-	var arr = sessionStorage.getItem("arr");
+	var arr = localStorage.getItem("arr");
 	var Arr = JSON.parse(arr);
 	console.log(Arr);
 	
