@@ -7,6 +7,8 @@
 	   var slist=document.querySelector("#slist");
 	   var xlist=document.querySelector("#xlist");
 	 
+	   var Btn=document.querySelector("#btn");
+	   var username=document.querySelector("#username");
 	 
 	  var str1,str2,str3,str4;
 	 
@@ -132,6 +134,20 @@
 	   	
 	   }
 	   
+	 
+	
+		
+			$("#btn").on("singleTap",function(){		console.log("sfdf");
+		         var str=username.value;
+		 	   
+			 	   localStorage.setItem("username",str);
+			 	   
+			 	   location.href="personal.html";
+			})
+		
+
+	
+	
 	
 	
 });

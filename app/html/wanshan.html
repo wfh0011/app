@@ -7,6 +7,9 @@
 		<link rel="stylesheet" type="text/css" href="../font_iconfont/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/wanshan.css"/>
+		<script type="text/javascript" src="../bootstrap/jquery-1.12.0.js" ></script>
+		<script type="text/javascript" src="../zepto/zepto.js" ></script>
+		<script type="text/javascript" src="../zepto/touch.js" ></script>
 		<script type="text/javascript" src="../js/wanshan.js" ></script>
 	</head>
 	<body>
@@ -20,7 +23,7 @@
 		<div class="kongbai"></div>
 		<!--  注册    -->
 		<div class="reg">
-			  <p><span>昵称</span><input type="text"/></p>
+			  <p><span>昵称</span><input type="text"  id="username"/></p>
 			  <p><span>手机号码</span><input type="telephone" name="mobile" pattern="1[3578]\d{9}"></p>
 			  <p>
 			  	<span>收货地址</span>
@@ -49,7 +52,7 @@
 				     <textarea placeholder="说细地址" ></textarea>
 				</span>
 			  </p>
-			  <p><input type="button" value="提交"/></p>
+			  <p><input type="button" value="提交" id="btn"/></p>
 		</div>
 			<!--  底部    -->
 		<footer class="bottom">
