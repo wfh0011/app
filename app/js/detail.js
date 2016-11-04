@@ -85,14 +85,15 @@
 			   		console.log(res)
 			   		for (var i=0;i<8;i++) {
 				   		$.each(res, function(i,item) {
-				   			console.log(item.comment_star);
-				   			
 				   				$("<li><div class='comment_name'><img src='"+item.face_src+"'/><span>"+item.user_name+"</span><span>"+item.pulish_time+"</span></div><div class='comment_star'><img src='"+item.comment_star+"'/></div><p class='comment_info'>"+item.comment_info+"</p><p class='buy_date'>"+item.buy_date+"</p></li>").appendTo($commentlist);
-				   		});	
-			  	 	}	
+				   				
+				   		});
+				   		
+			  	 	}
 			   }
 			});
 			$.ajax();
+			
 		})
 		
 		

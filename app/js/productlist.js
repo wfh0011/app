@@ -1,4 +1,10 @@
-var $products_list=$('.products_list');
+		var $sideList = $(".side-list");
+		var $iconUlist = $(".icon-uilist");
+		$iconUlist.on("tap",function(){
+			$sideList.toggle();
+		})
+		
+		var $products_list=$('.products_list');
 	 	var id=localStorage.getItem("id");
 		$.ajaxSetup({  
 		   type: "GET",//请求方式  

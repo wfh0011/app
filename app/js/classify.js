@@ -1,3 +1,8 @@
+		var $sideList = $(".side-list");
+		var $iconUlist = $(".icon-uilist");
+		$iconUlist.on("tap",function(){
+			$(".side-list").toggle();
+		})
 		var idx=0;
 		var $main_right=$(".main_right");
 		var $top_list=$(".top_list");
@@ -50,9 +55,7 @@
 			if (s<$(window).height()) {
 				$.ajax();
 			}
-//			if ($(window).scrollTop()>0) {
-//				$main_left.css({position:"fixed",top:"48px"})
-//			}
+
 		});
 		
 		

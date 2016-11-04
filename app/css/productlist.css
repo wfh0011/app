@@ -9,30 +9,57 @@ header, footer {
   line-height: 48px;
 }
 
-.head {
+* {
   margin: 0;
-  height: 48px;
-  width: 100%;
-  background: #8E488E;
-  color: #fff;
-  z-index: 2;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pro_head {
+  background: #8e488e;
+  display: flex;
+}
+
+.pro_head a, .pro_head span {
+  flex: 1;
+  text-align: center;
+  color: white;
+  padding: 0px;
+}
+
+.pro_foot {
+  display: flex;
   position: fixed;
-  top: 0;
   left: 0;
-}
-
-footer {
-  width: 100%;
-  height: 48px;
-  position: fixed;
+  right: 0;
   bottom: 0;
-  border-top: 1px solid #f1f5f5;
-  background: #8E488E;
+  height: 54px;
+  background-color: #fff;
+  padding: 3px 0;
+  border-top: 1px solid #999;
+  z-index: 100;
 }
 
-.head h2 {
-  margin: 0;
+.pro_foot a {
+  text-decoration: none;
+  color: #999;
+  flex: 1;
+  text-align: center;
+}
+
+.pro_foot a i {
+  display: block;
+}
+
+.pro_foot a .iconfont {
   font-size: 16px;
+}
+
+.pro_foot a span {
+  font-size: 12px;
 }
 
 .category {
@@ -60,12 +87,11 @@ footer {
   border-right: 1px solid #CCCCCC;
 }
 
-.list {
-  position: absolute;
-  top: 97px;
+.all_list {
+  padding-top: 50px;
 }
 
-.list ul {
+.all_list ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -73,35 +99,79 @@ footer {
   flex-wrap: wrap;
 }
 
-.list ul li {
+.all_list ul li {
   padding: 5px;
   border: 1px solid #f1f5f6;
   height: 225px;
-  overflow: hidden;
+  width: 46%;
 }
 
-.list ul li a {
+.all_list ul li a {
   text-decoration: none;
   color: black;
 }
 
-.list ul li .product_big {
+.all_list ul li .product_big {
+  width: 100%;
   height: 175.5px;
   padding-bottom: 5px;
 }
 
-.list ul li .title {
+.all_list ul li .title {
   height: 22px;
   line-height: 22px;
   font-size: 14px;
 }
 
-.list ul li .price {
+.all_list ul li .price {
   color: #df5717;
   font-weight: bold;
 }
 
-.list ul li .price img {
+.all_list ul li .price img {
   height: 15px;
   margin-top: 5px;
+}
+
+.side-list {
+  width: 126px;
+  height: 234px;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  border-radius: 5px;
+  z-index: 101;
+  right: 38px;
+  top: 50px;
+  display: none;
+}
+
+.side-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-list ul li {
+  height: 38px;
+  border-bottom: 1px solid #5b6166;
+  line-height: 38px;
+  text-align: center;
+}
+
+.side-list ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-list ul li:last-child {
+  border-bottom: none;
+}
+
+.side-list ::before {
+  content: "";
+  border: 10px solid transparent;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  right: 10px;
+  top: -20px;
 }

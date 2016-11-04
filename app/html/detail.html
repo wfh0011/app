@@ -4,18 +4,18 @@
 		<meta charset="UTF-8">
 		<title>商品详情页</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<link rel="stylesheet" href="../font/font_diy8qvn2fenrk9/iconfont.css" />>
+		<link rel="stylesheet" href="../font/font_diy8qvn2fenrk9/iconfont.css" />
+		<link rel="stylesheet" href="../font/font/iconfont.css" />
 		<link rel="stylesheet" href="../css/detail.css" />
 		<link rel="stylesheet" href="../swiper/swiper-3.4.0.min.css" />
 		<script src="../swiper/swiper-3.4.0.min.js"></script>
 		<script type="text/javascript" src="../js/jquery-1.12.0.js" ></script>
 		<script type="text/javascript" src="../zepto/zepto.js" ></script>
 		<script type="text/javascript" src="../zepto/touch.js" ></script>
-		
 	</head>
 	<body>
-		<header class="head">
-			<a class="iconfont icon-fanhui" href="#"></a>
+		<header class="detail_head">
+			<a class="iconfont icon-fanhui" href="produclist.html"></a>
 			<a href="#" class="detail">详情</a>
 			<a href="#" class="comment">评论</a>
 			<a class="iconfont icon-uilist" href="#"></a>
@@ -23,7 +23,6 @@
 		<div class="detail_main">
 			<!--详情信息-->
 			<div class="detail_main1">
-			
 				<div class="swiper-container">
 				    <div class="swiper-wrapper">
 				        <div class="swiper-slide"><img src="../img/details_kbl1.jpg"/></div>
@@ -83,7 +82,7 @@
 				</ul>
 			</div>
 		</div>
-		<footer class="foot">
+		<footer class="detail_foot">
 			<a href="car.html"><span class="shoppingCar">购物车<span>0</span></span></a>
 			<span class="inCar">加入购物车</span>
 			<a href="car.html"><span class="buyNow">立即购买</span></a>
@@ -101,74 +100,5 @@
 		</aside>
 
 	</body>
-<<<<<<< HEAD
-	<script>
-		
-		var detail_src=localStorage.getItem("product_src1");
-		var detail_brand=localStorage.getItem("brand_name");
-		var detail_product=localStorage.getItem("product_name");
-		var detail_price=localStorage.getItem("product_price");
-		
-		//轮播图片更换
-		$(".swiper-slide").children("img").first().attr("src",detail_src);
-		//价格更换
-		$(".detail_price").children("span").last().html(detail_price);
-		//品牌名称
-		$(".detail_brand").html(detail_brand);
-		//商品名称变换
-		$(".detail_product").html(detail_product);
-		//初始化Swiper：最好是挨着</body>标签
-		var mySwiper = new Swiper ('.swiper-container', {
-			//可选选项，自动滑动
-			autoplay: 2000,//可选选项，自动滑动
-			//方向：垂直
-//		    direction: 'vertical',
-		    //是否循环（轮播）
-		    loop: true,
-		    // 如果需要分页器
-		    pagination: '.swiper-pagination',
-		    //分页器是否可点击切换
-		    paginationClickable :true,
-		    // 如果需要前进后退按钮
-//		    nextButton: '.swiper-button-next',
-//		    prevButton: '.swiper-button-prev',
-		    // 如果需要滚动条
-		//  scrollbar: '.swiper-scrollbar'
-		})  
-		//点击加入购物车
-		var shoppingCar=$(".shoppingCar");
-		var inCar=$(".inCar");
-		var buyNow=$(".buyNow");
-		//创建空数组
-		var arr=[];
-		if (localStorage.getItem("car_number")) {
-			shoppingCar.children("span").html(localStorage.getItem("car_number"));
-			arr=JSON.parse(localStorage.getItem("car_info"));
-			console.log(arr)
-		}
-		inCar.on("tap",function(){
-			var obj={
-				"detail_src":detail_src,
-				"detail_product":detail_product,
-				"detail_price":detail_price
-			}
-			arr.push(obj);
-			var length=arr.length;
-			shoppingCar.children("span").html(length);
-			console.log(arr);
-			localStorage.setItem("car_number",arr.length)
-			localStorage.setItem("car_info",JSON.stringify(arr));
-		});
-		
-		var $sideList = $(".side-list");
-		var $iconUlist = $(".icon-uilist");
-		$iconUlist.click(function(){
-			$sideList.toggle();
-		})
-		
-		
-	</script>
-=======
 	<script src="../js/detail.js"></script>
->>>>>>> 0aa56cab7789ed310f8e34c897ef190ce9fe86ab
 </html>

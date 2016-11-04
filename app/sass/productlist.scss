@@ -1,26 +1,19 @@
 body{padding: 0;margin: 0;font-family: "microsoft yahei";}
 $bg:rgb(241,245,245);
 header,footer{text-align: center;line-height: 48px;}
-.head{
-    margin: 0;
-    height: 48px;
-    width: 100%;
-    background: #8E488E;
-    color: #fff;
-    z-index: 2;
-    position: fixed;
-    top: 0;
-    left: 0;
+*{margin: 0;padding: 0;}
+a{text-decoration: none;}
+.pro_head{background: rgb(142,72,142);display: flex;}
+.pro_head a,.pro_head span{flex: 1;text-align: center;color: white;padding: 0px;}
+.pro_foot{display: flex;position: fixed;left: 0;right: 0;bottom: 0;height: 54px;
+        background-color: #fff;padding: 3px 0;border-top: 1px solid #999;z-index: 100;
+        a{text-decoration: none;color: #999;flex: 1;text-align: center;
+        i{display: block;}
+        .iconfont{font-size:16px ;}
+        span{font-size: 12px;}
+        }
 }
-footer{
-    width: 100%;
-    height: 48px;
-    position: fixed;
-    bottom: 0;
-    border-top: 1px solid $bg;
-    background: #8E488E;
-}
-.head h2{margin: 0;font-size: 16px;}
+
 .category{
     position: fixed;
     z-index: 2;
@@ -34,8 +27,8 @@ footer{
 }
 .category_left,.category_right{flex: 1;height: 28px;padding: 0 15px;text-align: center;font-size: 12px;line-height: 28px;}
 .category_left{border-right: 1px solid #CCCCCC;}
-.list{position: absolute;top: 97px;}
-.list ul{
+.all_list{padding-top: 50px;}
+.all_list ul{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -45,12 +38,13 @@ footer{
         padding: 5px;
         border: 1px solid #f1f5f6;
         height: 225px;
-        overflow: hidden;
+        width: 46%;
         a{
              text-decoration: none;
              color: black;
         }
         .product_big{
+            width: 100%;
             height: 175.5px;
             padding-bottom: 5px;
         }
@@ -63,9 +57,24 @@ footer{
             color: #df5717;
             font-weight: bold;
             img{
+                
                 height: 15px;
                 margin-top: 5px;
             }
         }
     }
 }
+.side-list{
+        width: 126px;height: 234px;background:rgba(0,0,0,0.5);
+        position: absolute;border-radius: 5px;z-index: 101;right: 38px;top: 50px;
+        display: none;
+        ul{
+            list-style: none;padding: 0;margin: 0;
+            li{
+                height: 38px;border-bottom:1px solid #5b6166 ;line-height: 38px;text-align: center;
+                a{text-decoration: none;color: white;}
+            }
+            li:last-child{border-bottom: none;} 
+        }
+        ::before{content: "";border:10px solid transparent ;border-bottom:10px solid rgba(0,0,0,0.5) ;position:absolute ;right: 10px;top: -20px;}
+    }
