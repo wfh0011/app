@@ -1,3 +1,4 @@
+;$(function(){
 		var $sideList = $(".side-list");
 		var $iconUlist = $(".icon-uilist");
 		$iconUlist.on("tap",function(){
@@ -43,3 +44,5 @@
 		    }  
 		});
 		$.ajax();
+		
+});

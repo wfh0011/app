@@ -1,3 +1,4 @@
+;$(function(){
 		//提取本地储存当前浏览商品数据
 		var detail_src=localStorage.getItem("product_src1");
 		var detail_brand=localStorage.getItem("brand_name");
@@ -96,4 +97,4 @@
 			
 		})
 		
-		
+});		

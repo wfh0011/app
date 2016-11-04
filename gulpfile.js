@@ -19,7 +19,8 @@ gulp.task('buildSass',function(){
 		// 压缩文件并改名
 		.pipe(sass({outputStyle:'compressed'}))
 		.pipe(rename({suffix:'.min'}))
-
+		.pipe(concat('app.css'))
+		.pipe(gulp.dest('./dist/css'))
 		// 输出文件
 		.pipe(gulp.dest('./app/css'));
 });
