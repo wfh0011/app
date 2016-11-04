@@ -2,7 +2,7 @@ body{
      background-color: #f1f5f6;
 }
     
-    .person{
+    .L_person{
         
           display: flex;
           height: 85px;
@@ -77,7 +77,7 @@ body{
     
     
         
-        .accout{
+        .L_accout{
                 
                  display: flex;
                  height: 60px;
@@ -122,7 +122,7 @@ body{
         
         
         
-      .nav1{
+      .L_nav1{
           
             display: flex;
             border: 1px solid #ccc;
@@ -237,7 +237,7 @@ body{
 
 
    
-      .nav2{
+      .L_nav2{
           
             display: flex;
             border: 1px solid #ccc;
@@ -330,7 +330,7 @@ body{
       }  
 
 
-.side-list{
+.L_side-list{
         width: 126px;height: 234px;background:rgba(0,0,0,0.5);
         position: absolute;border-radius: 5px;z-index: 101;right: 0px;top: 50px;
         display: none;

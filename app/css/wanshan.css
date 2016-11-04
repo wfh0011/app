@@ -2,7 +2,7 @@ body, html {
   height: 100%;
 }
 
-.top {
+.L_top {
   height: 48px;
   background-color: #8e488e;
   display: flex;
@@ -13,38 +13,38 @@ body, html {
   font-size: 1.2rem;
 }
 
-.top span {
+.L_top span {
   height: 48px;
   line-height: 48px;
   text-align: center;
 }
 
-.top span:nth-child(1) {
+.L_top span:nth-child(1) {
   display: block;
   width: 30px;
 }
 
-.top span:nth-child(2) {
+.L_top span:nth-child(2) {
   flex: 1;
 }
 
-.top span:nth-child(3) {
+.L_top span:nth-child(3) {
   width: 40px;
   font-size: 1.2rem;
 }
 
-.kongbai {
+.L_kongbai {
   height: 20px;
   display: flex;
   background-color: #f1f5f6;
 }
 
-.reg {
+.L_reg {
   display: flex;
   flex-direction: column;
 }
 
-.reg p {
+.L_reg p {
   display: flex;
   height: 32px;
   font-size: 1.2rem;
@@ -54,7 +54,7 @@ body, html {
   flex: 2;
 }
 
-.reg p span:nth-child(1) {
+.L_reg p span:nth-child(1) {
   display: block;
   width: 78px;
   height: 32px;
@@ -63,14 +63,14 @@ body, html {
   background-color: #eee;
 }
 
-.reg p input {
+.L_reg p input {
   flex: 1;
   margin-right: 2px;
   border: none;
   border-left: 1px solid #ccc;
 }
 
-.reg p:nth-child(3) {
+.L_reg p:nth-child(3) {
   height: 166px;
   display: flex;
   flex-direction: row;
@@ -78,19 +78,19 @@ body, html {
   justify-content: flex-start;
 }
 
-.reg p:nth-child(3) span:nth-child(1) {
+.L_reg p:nth-child(3) span:nth-child(1) {
   line-height: 166px;
   height: 166px;
 }
 
-.reg p:nth-child(3) span:nth-child(2) {
+.L_reg p:nth-child(3) span:nth-child(2) {
   display: flex;
   flex: 1;
   height: 166px;
   flex-direction: column;
 }
 
-.reg p:nth-child(3) span:nth-child(2) input {
+.L_reg p:nth-child(3) span:nth-child(2) input {
   line-height: 20px;
   border: none;
   border-left: 1px solid #ccc;
@@ -98,21 +98,21 @@ body, html {
   border-bottom: 2px solid #ccc;
 }
 
-.reg p:nth-child(3) span:nth-child(2) textarea {
+.L_reg p:nth-child(3) span:nth-child(2) textarea {
   border: none;
   border-left: 1px solid #ccc;
   flex: 1;
   height: 60px;
 }
 
-.reg p:nth-child(4) {
+.L_reg p:nth-child(4) {
   flex: 1;
   margin-top: 20px;
   height: 34px;
   background-color: #8e488e;
 }
 
-.reg p:nth-child(4) input {
+.L_reg p:nth-child(4) input {
   font-size: 1.2rem;
   color: #fff;
   border-radius: 3px;
@@ -120,7 +120,7 @@ body, html {
   margin: 0px;
 }
 
-.bottom {
+.L_bottom {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -130,14 +130,14 @@ body, html {
   background-color: #fff;
 }
 
-.bottom nav {
+.L_bottom nav {
   padding-top: 7px;
   height: 40px;
   display: flex;
   justify-content: center;
 }
 
-.bottom nav a {
+.L_bottom nav a {
   line-height: 16px;
   font-size: 0.8rem;
   color: #7b7777;
@@ -146,11 +146,11 @@ body, html {
   text-decoration: none;
 }
 
-.bottom nav a:nth-child(4) {
+.L_bottom nav a:nth-child(4) {
   color: #8e488e;
 }
 
-.side-list {
+.L_side-list {
   width: 126px;
   height: 234px;
   background: rgba(0, 0, 0, 0.5);
@@ -162,29 +162,29 @@ body, html {
   display: none;
 }
 
-.side-list ul {
+.L_side-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.side-list ul li {
+.L_side-list ul li {
   height: 38px;
   border-bottom: 1px solid #5b6166;
   line-height: 38px;
   text-align: center;
 }
 
-.side-list ul li a {
+.L_side-list ul li a {
   text-decoration: none;
   color: white;
 }
 
-.side-list ul li:last-child {
+.L_side-list ul li:last-child {
   border-bottom: none;
 }
 
-.side-list ::before {
+.L_side-list ::before {
   content: "";
   border: 10px solid transparent;
   border-bottom: 10px solid rgba(0, 0, 0, 0.5);
