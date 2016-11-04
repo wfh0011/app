@@ -11,35 +11,7 @@
 		<script type="text/javascript" src="../bootstrap/jquery-1.12.0.js" ></script>
 		<script type="text/javascript" src="../zepto/zepto.js" ></script>
 		<script type="text/javascript" src="../zepto/touch.js" ></script>
-		<script>
-			  document.addEventListener("DOMContentLoaded",function(){
-			  	
-			  	       var username=document.querySelector("#username");
-			  	      
-			  	
-			  	
-			  	    var str=  localStorage.getItem("username");
-			  	      
-			  	      if (str) {
-			  	      	      username.innerHTML=str;
-			  	      }
-			  	      
-			  	$(".dt").on("singleTap",function(){
-			  		 console.log("aaa");
-			  		   location.href="wanshan.html";
-			  		
-			  	});
-			  	 
-			  	var $sideList = $(".side-list");
-				var $iconFenlei = $(".icon-fenlei");
-				$iconFenlei.click(function(){
-					$sideList.toggle();
-				})
-			  	
-			  	
-			  	
-			  });
-		</script>
+		<script src="../js/personal.js"></script>
 	</head>
 	<body>
 		
