@@ -1,8 +1,8 @@
 *{margin: 0;padding: 0;}
 a{text-decoration: none;}
-header{background: rgb(142,72,142);display: flex;}
-header a,header span{flex: 1;text-align: center;color: white;padding: 15px 0;}
-section{
+.wheader{background: rgb(142,72,142);display: flex;}
+.wheader a,.wheader span{flex: 1;text-align: center;color: white;padding: 15px 0;}
+.wsec{
     display: flex;flex-direction: column;
     padding-bottom: 80px;
     div{
@@ -17,7 +17,7 @@ section{
     img{width: 60px;vertical-align: middle;padding-top: 10px;}
 }
 
-footer{
+.wfooter{
     display: flex;position: fixed;bottom: 0;left: 0;right: 0;
     a{flex: 1;text-align: center;padding: 15px 0;}
     a:nth-child(1){color: black;border-top: 1px solid rgb(142,72,142);background: white;}

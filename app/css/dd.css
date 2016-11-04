@@ -7,13 +7,13 @@ a {
   text-decoration: none;
 }
 
-header {
+.Wheader {
   display: flex;
   background: #8e488e;
   padding: 15px 0;
 }
 
-header a, header span {
+.Wheader a, .Wheader span {
   flex: 1;
   text-align: center;
   color: white;
@@ -23,102 +23,102 @@ ul, li {
   list-style: none;
 }
 
-nav {
+.Wnav {
   display: flex;
   border-bottom: 3px solid #ddd;
 }
 
-nav li {
+.Wnav li {
   flex: 1;
   border-right: 1px solid #ddd;
   text-align: center;
   padding: 15px 0;
 }
 
-nav li a {
+.Wnav li a {
   color: black;
 }
 
-nav li:last-child {
+.Wnav li:last-child {
   border: none;
 }
 
-section {
+.Wsec {
   padding-bottom: 50px;
 }
 
-.content {
+.Wcontent {
   margin: 10px;
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
 }
 
-.top {
+.Wtop {
   position: relative;
 }
 
-.top h4 {
+.Wtop h4 {
   position: absolute;
   left: 10px;
 }
 
-.top span {
+.Wtop span {
   position: absolute;
   right: 10px;
   color: deeppink;
 }
 
-.center {
+.Wcenter {
   position: relative;
   margin-top: 35px;
   border-top: 1px solid #ddd;
   display: flex;
 }
 
-.center img {
+.Wcenter img {
   width: 60px;
   height: 60px;
   vertical-align: middle;
   padding-top: 10px;
 }
 
-.center .wz {
+.Wcenter .wz {
   margin-top: 10px;
   margin-left: 30px;
 }
 
-.center .money {
+.Wcenter .money {
   position: absolute;
   left: 100px;
   top: 70px;
   color: red;
 }
 
-.center .sl {
+.Wcenter .sl {
   position: absolute;
   right: 20px;
   top: 70px;
 }
 
-.foot {
+.Wfoot {
   border-top: 1px solid #ddd;
   margin-top: 40px;
   position: relative;
 }
 
-.foot p {
+.Wfoot p {
   position: absolute;
   right: 10px;
   top: 10px;
 }
 
-.footer {
+.Wfooter {
   margin-top: 40px;
   overflow: hidden;
 }
 
-.footer button {
+.Wfooter button {
   border-radius: 5px;
   padding: 5px;
   border: none;
@@ -126,7 +126,7 @@ section {
   margin-right: 3px;
 }
 
-footer {
+.Wffooter {
   display: flex;
   position: fixed;
   left: 0;
@@ -139,22 +139,22 @@ footer {
   z-index: 100;
 }
 
-footer a {
+.Wffooter a {
   text-decoration: none;
   color: #999;
   flex: 1;
   text-align: center;
 }
 
-footer a i {
+.Wffooter a i {
   display: block;
 }
 
-footer a .iconfont {
+.Wffooter a .iconfont {
   font-size: 16px;
 }
 
-footer a span {
+.Wffooter a span {
   font-size: 12px;
 }
 

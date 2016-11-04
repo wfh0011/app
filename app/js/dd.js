@@ -15,7 +15,7 @@
 		console.log(src);
 		console.log(wz);
 		console.log(money);
-	var $ct = $(".center").eq(idx);
+	var $ct = $(".Wcenter").eq(idx);
 		var $img = $("<img/>").attr("src",src);
 		var $wz = $("<span/>").addClass("wz").html(wz);
 		var $money = $("<span/>").addClass("money").html(money);
@@ -28,24 +28,24 @@
 	});
 		
 	function jl(){
-		var $div = $("<div/>").addClass("content");
+		var $div = $("<div/>").addClass("Wcontent");
 		
-		var $top = $("<div/>").addClass("top");
+		var $top = $("<div/>").addClass("Wtop");
 		var $h4 = $("<h4/>").html("店铺1");
 		var $topsp = $("<span/>").html("交易成功");
 		$top.append($h4).append($topsp)
 		
-		var $ct = $("<div/>").addClass("center");
+		var $ct = $("<div/>").addClass("Wcenter");
 		var $ctsp = $("<span/>").addClass("sl").html("x2");
 		$ct.append($ctsp);
 		
-		var $foot = $("<div/>").addClass("foot");
+		var $foot = $("<div/>").addClass("Wfoot");
 		var $p = $("<p/>").html("共1商品，合计：￥");
 		var $psp = $("<span/>").html("100");
 		$p.append($psp);
 		$foot.append($p);
 		
-		var $footer = $("<div/>").addClass("footer");
+		var $footer = $("<div/>").addClass("Wfooter");
 		var $btn1 = $("<button/>").html("查看物流");
 		var $btn2 = $("<button/>").html("删除订单");
 		var $btn3 = $("<button/>").html("付款");
@@ -55,14 +55,14 @@
 		
 		$("section").append($div);
 		
-		$btn2.click(function(){
+		$btn2.on("tap",function(){
 			$(this).parent().parent().remove();
 		})
 	}
 	
 	var $sideList = $(".side-list");
 	var $iconUlist = $(".icon-uilist");
-	$iconUlist.click(function(){
+	$iconUlist.on("tap",function(){
 		$sideList.toggle();
 	})
 

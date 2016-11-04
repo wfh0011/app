@@ -7,61 +7,61 @@ a {
   text-decoration: none;
 }
 
-header {
+.wheader {
   background: #8e488e;
   display: flex;
 }
 
-header a, header span {
+.wheader a, .wheader span {
   flex: 1;
   text-align: center;
   color: white;
   padding: 15px 0;
 }
 
-section {
+.wsec {
   display: flex;
   flex-direction: column;
   padding-bottom: 80px;
 }
 
-section div {
+.wsec div {
   flex: 1;
   position: relative;
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
 }
 
-section div .money {
+.wsec div .money {
   position: absolute;
   left: 140px;
   top: 50px;
   color: red;
 }
 
-section div .wz {
+.wsec div .wz {
   position: absolute;
   top: 10px;
   left: 140px;
 }
 
-section div p {
+.wsec div p {
   position: absolute;
   right: 20px;
   top: 50px;
 }
 
-section div p input {
+.wsec div p input {
   text-align: center;
 }
 
-section img {
+.wsec img {
   width: 60px;
   vertical-align: middle;
   padding-top: 10px;
 }
 
-footer {
+.wfooter {
   display: flex;
   position: fixed;
   bottom: 0;
@@ -69,24 +69,24 @@ footer {
   right: 0;
 }
 
-footer a {
+.wfooter a {
   flex: 1;
   text-align: center;
   padding: 15px 0;
 }
 
-footer a:nth-child(1) {
+.wfooter a:nth-child(1) {
   color: black;
   border-top: 1px solid #8e488e;
   background: white;
 }
 
-footer a:nth-child(2) {
+.wfooter a:nth-child(2) {
   background: #dd3d33;
   color: white;
 }
 
-footer a:nth-child(3) {
+.wfooter a:nth-child(3) {
   background: #8e488e;
   color: white;
 }
