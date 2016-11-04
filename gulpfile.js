@@ -34,11 +34,11 @@ gulp.task('jtSass',function(){
 
 // js自动化处理
 gulp.task('buildjs',function(){
-	gulp.src('./app/js/*.js')
+	gulp.src('./app/js2/*.js')
 
 	// 合并js
 	.pipe(concat('app.js'))
-	.pipe(gulp.dest('./dist/js'))
+	.pipe(gulp.dest('./dist2/js'))
 
 	// 压缩
 	.pipe(jsmin({
