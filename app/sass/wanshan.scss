@@ -7,7 +7,7 @@ body,html{
 
 
 
-.top{
+.L_top{
     
     
    height: 48px;
@@ -45,14 +45,14 @@ body,html{
 }
    
     
-    .kongbai{
+    .L_kongbai{
          height: 20px;
          display: flex;
          background-color: #f1f5f6;
     }
 
 
-    .reg{
+    .L_reg{
               display: flex;
               flex-direction: column;
               
@@ -147,7 +147,7 @@ body,html{
     }
 
 
-    .bottom{
+    .L_bottom{
         position:fixed;left:0;bottom:0;right:0;
         border-top: 1px solid #ccc;
          height: 52px;
@@ -167,7 +167,7 @@ body,html{
        }
 }
 
-.side-list{
+.L_side-list{
         width: 126px;height: 234px;background:rgba(0,0,0,0.5);
         position: absolute;border-radius: 5px;z-index: 101;right: 0px;top: 50px;
         display: none;
